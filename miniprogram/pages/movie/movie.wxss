@@ -1,0 +1,31 @@
+/* pages/movie/movie.wxss */
+.movie{
+	display: flex;
+	border-bottom: 1px solid #bfbfbf;
+	padding: 20rpx
+}
+.movie-info{
+	flex: 1;
+	color: #000;
+	font-size:32rpx;
+
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.movie-img{
+	 width: 250rpx;
+	height: 300rpx;
+	 margin-right: 20rpx ;
+}
+.title{
+	font-weight: bolder;
+	margin-bottom: 20rpx;
+}
+.average{
+	color:#d81e06;
+}
+view{
+	margin-bottom: 20rpx;
+}
+.casts{
+	line-height: 60rpx;
+}

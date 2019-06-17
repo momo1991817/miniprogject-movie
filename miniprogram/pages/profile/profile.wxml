@@ -1,0 +1,8 @@
+<!--pages/profile/profile.wxml-->
+<view class="user-box">
+      <view class="user-info">
+            <open-data type="userAvatarUrl" class="avatar"></open-data>
+            <open-data type="userNickName" class="nickname"></open-data>
+      </view>
+</view>
+<button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" type='default' class="user-btn">获取用户信息</button>

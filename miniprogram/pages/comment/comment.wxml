@@ -1,0 +1,22 @@
+<view class="movie-pfo" style='background:url({{detail.images.large}}) no-repeat  top/cover'></view>
+<view class="movie-cover"></view>
+<view class="movie-container">
+      <image src="{{detail.images.small}}" class="movie-img"></image>
+      <view class='movie-info'>
+            <view>{{detail.title}}</view>
+            <view>{{detail.rating.average}}分</view>
+            <view wx:for="{{detail.countries}}" wx:key="{{index}}">
+                  {{item}}
+            </view>
+      </view>
+</view>
+<view>{{detail.summary}}</view>
+<van-cell-group>
+      <van-field value="{{ content }}" placeholder="说点什么吧" border="{{ false }}" bind:change="onFieldChange" />
+</van-cell-group>
+<van-rate value="{{ score }}" bind:change="onRateChange" value="5" />
+<van-button type="warning" bindtap="uploadImg">上传图片</van-button>
+<view>
+      <image wx:for="{{previewImgs}}" wx:key="{{index}}" src="{{item}}" class="preview-img"></image>
+</view>
+<van-button type="danger" size="large" bindtap='submit'>提交评论</van-button>

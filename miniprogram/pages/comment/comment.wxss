@@ -1,0 +1,41 @@
+/* pages/comment/comment.wxss */
+
+.movie-pfo {
+	height:440rpx;
+      filter: blur(40rpx);
+      opacity: 0.6;
+}
+.movie-cover{
+	width: 100%;
+	height: 440rpx;
+	position: absolute;
+	top:0;
+	left: 0;
+	background:#333;
+	z-index: -1
+}
+.movie-container {
+      display: flex;
+      padding: 20rpx;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+.movie-img {
+      width: 300rpx;
+      height: 400rpx;
+      margin-right: 20rpx;
+}
+
+.movie-info {
+      flex: 1;
+	color: #fff
+}
+ .movie-info view{
+	 margin-top: 20rpx;
+ }
+ .preview-img{
+	 width:200rpx;
+	 height:200rpx;
+ }
