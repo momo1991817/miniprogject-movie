@@ -9,6 +9,6 @@
                   </block>
             </view>
             <view>年份： {{item.year}}</view>
-		
+		t2rWTASG
       </view>
 </view>
